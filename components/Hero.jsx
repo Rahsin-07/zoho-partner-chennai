@@ -7,10 +7,10 @@ const heroSlides = [
   {
     kind: 'intro',
     color: '#2563eb',
-    pillText: 'Zoho Authorized Partner · Chennai, India',
+    pillText: 'Zoho Authorized Partner · Chennai',
     showCertified: true,
     headlinePart1: 'Zoho Authorized Partner',
-    headlinePart2: 'Chennai, India',
+    headlinePart2: 'Chennai',
     description:
       'ZoFlowX helps Chennai businesses unlock the full potential of Zoho — structured implementation, custom solutions, migration and managed services.',
     descriptionBold: 'Every feature you pay for, working hard for your growth.',
@@ -223,7 +223,7 @@ export default function Hero() {
           }}
         >
           <span className="grad-blue-red">Zoho Authorized Partner</span>{' '}
-          in <span className="grad-red-yellow">Chennai, India</span>
+          in <span className="grad-red-yellow">Chennai </span>
         </h1>
 
         {/* ═══════════════════ SLIDE STAGE ═══════════════════ */}

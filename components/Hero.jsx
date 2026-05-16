@@ -111,7 +111,7 @@ const moduleChips = [
   { label: 'Zoho Analytics', icon: 'bi-bar-chart-line', x: '1%',  y: '52%', delay: 0.8, color: '#f59e0b' },
 ]
 
-const SLIDE_DURATION = 5000 // 7s per slide
+const SLIDE_DURATION = 7000 // 7s per slide
 
 const mobileBtn = {
   width: 38, height: 38, borderRadius: '50%',
@@ -135,7 +135,7 @@ export default function Hero() {
     return () => clearTimeout(t)
   }, [active, paused])
 
-  // Fade-up observer (for the section as a whole entering view)
+  // Fade-up observer
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -174,7 +174,7 @@ export default function Hero() {
       <div aria-hidden style={{ position: 'absolute', width: 420, height: 420, top: '30%', right: '20%', background: 'radial-gradient(circle at center, rgba(220,38,38,0.12), transparent 60%)', animation: 'blob-drift 22s ease-in-out infinite', pointerEvents: 'none' }} />
       <div aria-hidden style={{ position: 'absolute', inset: 0, opacity: 0.45 }} className="dot-grid" />
 
-      {/* Per-slide colored glow that retints with the active slide */}
+      {/* Per-slide colored glow */}
       <div aria-hidden style={{
         position: 'absolute',
         top: '20%', left: '50%',
@@ -187,8 +187,8 @@ export default function Hero() {
         zIndex: 1,
       }} />
 
-   
-      {/* <div aria-hidden style={{ position: 'absolute', inset: 0, pointerEvents: 'none', overflow: 'hidden', zIndex: 1 }}>
+{/*    
+      <div aria-hidden style={{ position: 'absolute', inset: 0, pointerEvents: 'none', overflow: 'hidden', zIndex: 1 }}>
         {moduleChips.map((c, i) => (
           <div key={c.label} className="d-none d-xl-inline-flex"
             style={{
@@ -208,9 +208,27 @@ export default function Hero() {
       </div> */}
 
       <div className="container position-relative" style={{ zIndex: 2 }}>
+
+        {/* ═══════════════════ PERSISTENT H1 (all slides) ═══════════════════ */}
+        <h1
+          style={{
+            fontFamily: 'Plus Jakarta Sans,sans-serif',
+            fontSize: 'clamp(2.2rem, 5vw, 3.8rem)',
+            fontWeight: 800,
+            color: '#0b1220',
+            textAlign: 'center',
+            marginBottom: 28,
+            letterSpacing: '-0.018em',
+            lineHeight: 1.2,
+          }}
+        >
+          <span className="grad-blue-red">Zoho Authorized Partner</span>{' '}
+          in <span className="grad-red-yellow">Chennai, India</span>
+        </h1>
+
         {/* ═══════════════════ SLIDE STAGE ═══════════════════ */}
         <div style={{
-          minHeight: 560,
+          minHeight: 500,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -244,16 +262,6 @@ export default function Hero() {
                   </div>
                 </div>
 
-                <h1 style={{
-                  fontFamily: 'Plus Jakarta Sans,sans-serif',
-                  fontSize: 'clamp(2.3rem, 5.6vw, 4.15rem)',
-                  fontWeight: 800, color: '#0b1220',
-                  marginBottom: 22, letterSpacing: '-0.028em', lineHeight: 1.05,
-                }}>
-                  <span className="grad-blue-red">{current.headlinePart1}</span><br />
-                  in <span className="grad-red-yellow">{current.headlinePart2}</span>
-                </h1>
-
                 <p style={{
                   fontSize: '1.13rem', color: '#475569', maxWidth: 760,
                   margin: '0 auto 32px', lineHeight: 1.75, fontFamily: 'Inter,sans-serif',
@@ -276,11 +284,11 @@ export default function Hero() {
                 {/* Floating service icon orb */}
                 <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 22 }}>
                   <div style={{
-                    width: 78, height: 78, borderRadius: 22,
+                    width: 54, height: 54, borderRadius: 16,
                     background: `linear-gradient(135deg, ${current.color}, ${current.color}cc)`,
                     color: '#fff',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    fontSize: '2rem',
+                    fontSize: '1.4rem',
                     boxShadow: `0 20px 40px ${current.color}40`,
                     animation: 'gentle-bob 4s ease-in-out infinite',
                   }}>
@@ -305,10 +313,10 @@ export default function Hero() {
                   }}>{current.tag}</span>
                 </div>
 
-                {/* Headline */}
+                {/* Headline — H2 */}
                 <h2 style={{
                   fontFamily: 'Plus Jakarta Sans,sans-serif',
-                  fontSize: 'clamp(1.8rem, 4.2vw, 3.1rem)',
+                  fontSize: 'clamp(1.1rem, 2vw, 1.5rem)',
                   fontWeight: 800,
                   color: '#0b1220',
                   marginBottom: 22,
@@ -321,10 +329,7 @@ export default function Hero() {
 
                 {/* Description */}
                 <p style={{
-                  fontSize: '1.1rem',
-                  color: '#475569',
-                  maxWidth: 760,
-                  margin: '0 auto 32px',
+                  fontSize: '0.88rem',
                   lineHeight: 1.75,
                   fontFamily: 'Inter,sans-serif',
                 }}>{current.description}</p>
@@ -545,7 +550,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes slide-in-up {
           from { opacity: 0; transform: translateY(28px); }
           to   { opacity: 1; transform: translateY(0); }

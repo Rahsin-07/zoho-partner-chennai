@@ -5,7 +5,7 @@ import { useEffect, useRef } from 'react'
 const articles = [
   {
     color: '#2563eb', category: 'Implementation', readTime: '8 min read',
-    title: 'How we structure a 30-minute Zoho audit (and why it works)',
+    title: 'How we structure a 30 minute Zoho audit (and why it works)',
     excerpt: 'The questions we ask, the screens we open, and the four red flags we look for before quoting a number.',
     icon: 'bi-clipboard2-check',
   },
@@ -45,7 +45,7 @@ export default function Resources() {
               Zoho Tips and Guides <span className="grad-blue-yellow">From Our Experts</span>
             </h2>
             <p className="section-sub">
-              Practical tutorials, expert breakdowns, and real-world tips updated regularly by India's trusted Zoho Partner to help you work smarter inside Zoho.
+              Practical tutorials, expert breakdowns, and real world tips updated regularly by India's trusted Zoho Partner to help you work smarter inside Zoho.
             </p>
           </div>
           <div className="col-lg-4 text-lg-end mt-3 mt-lg-0 d-none d-lg-block">
@@ -119,7 +119,7 @@ export default function Resources() {
 
                     <h3 className="art-title" style={{
                       fontSize: '1.1rem', fontWeight: 800,
-                      color: '#0b1220', fontFamily: 'Plus Jakarta Sans,sans-serif',
+                      color: '#0b1220', fontFamily: 'Inter,sans-serif',
                       lineHeight: 1.32, marginBottom: 10, letterSpacing: '-0.012em',
                       transition: 'color 0.3s', flex: 1,
                     }}>{a.title}</h3>
@@ -130,7 +130,7 @@ export default function Resources() {
                       display: 'flex', justifyContent: 'space-between',
                       alignItems: 'center', paddingTop: 14, borderTop: '1px solid #f0ece6',
                     }}>
-                      <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#64748b', fontFamily: 'Plus Jakarta Sans,sans-serif' }}>Read article</span>
+                      <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#64748b', fontFamily: 'Inter,sans-serif' }}>Read article</span>
                       <span className="art-arrow" style={{
                         width: 32, height: 32, borderRadius: 10,
                         background: `${a.color}15`, color: a.color,

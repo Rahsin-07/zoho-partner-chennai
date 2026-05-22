@@ -142,7 +142,7 @@ export default function Problem() {
 
                 <h3 style={{
                   fontSize: '1.05rem', fontWeight: 800, marginBottom: 10,
-                  color: '#0b1220', fontFamily: 'Plus Jakarta Sans,sans-serif',
+                  color: '#0b1220', fontFamily: 'Inter,sans-serif',
                   lineHeight: 1.32, letterSpacing: '-0.012em', position: 'relative',
                 }}>{p.title}</h3>
 

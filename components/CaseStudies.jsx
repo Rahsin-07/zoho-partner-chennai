@@ -10,7 +10,7 @@ const cases = [
     company: 'Image Star · Chennai',
     headline: 'Tally → Zoho Books migration with zero broken history',
     summary:
-      'Moved 1,500+ customers, 500+ vendors, custom-numbered records, and a full GST invoice template into Zoho Books. Set up rules for de-duplicated phones, PIN code fields, and a Tally-style branded invoice format.',
+      'Moved 1,500+ customers, 500+ vendors, custom numbered records, and a full GST invoice template into Zoho Books. Set up rules for de duplicated phones, PIN code fields, and a Tally style branded invoice format.',
     metrics: [
       { label: 'Customer records', value: '1,522' },
       { label: 'Vendor records',   value: '506' },
@@ -23,12 +23,12 @@ const cases = [
     color: '#2563eb',
     icon: 'bi-buildings',
     company: 'Brite Decking · Australia',
-    headline: 'From scattered leads to a 5-stage pipeline that closed itself',
+    headline: 'From scattered leads to a 5 stage pipeline that closed itself',
     summary:
-      'Re-architected their Zoho CRM around lead source attribution, automated UTM capture from Avanser call tracking, and rebuilt the Lead → Opportunity → Estimate → Sales Order → Invoice flow inside Zoho Books.',
+      'Re architected their Zoho CRM around lead source attribution, automated UTM capture from Avanser call tracking, and rebuilt the Lead → Opportunity → Estimate → Sales Order → Invoice flow inside Zoho Books.',
     metrics: [
       { label: 'Manual entry eliminated', value: '92%' },
-      { label: 'Lead-to-quote time',     value: '3d → 6h' },
+      { label: 'Lead to quote time',     value: '3d → 6h' },
       { label: 'Source attribution',     value: '100%' },
     ],
     stack: ['Zoho CRM', 'Zoho Books', 'Deluge', 'Avanser', 'UTM cascade'],
@@ -38,15 +38,15 @@ const cases = [
     color: '#f59e0b',
     icon: 'bi-laptop',
     company: 'CoWorkFlowX',
-    headline: 'A new multi-tenant SaaS, architected and shipped in six weeks',
+    headline: 'A new multi tenant SaaS, architected and shipped in six weeks',
     summary:
-      'Drafted the full PRD, designed an 18-table Mongoose schema, set up a permission matrix for four roles, integrated Razorpay, and produced an AI build prompt strategy — ready for the dev team to ship sprint by sprint.',
+      'Drafted the full PRD, designed an 18 table Mongoose schema, set up a permission matrix for four roles, integrated Razorpay, and produced an AI build prompt strategy — ready for the dev team to ship sprint by sprint.',
     metrics: [
       { label: 'PRD sections',     value: '14' },
       { label: 'Schemas designed', value: '18' },
       { label: 'Sprint plan',      value: '6 wks' },
     ],
-    stack: ['MERN', 'Razorpay', 'Multi-tenant', 'RBAC', 'Architecture'],
+    stack: ['MERN', 'Razorpay', 'Multi tenant', 'RBAC', 'Architecture'],
   },
 ]
 
@@ -134,13 +134,13 @@ export default function CaseStudies() {
                   </div>
                   <div>
                     <div style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: 1.6, color: c.color, textTransform: 'uppercase', fontFamily: 'Inter,sans-serif' }}>{c.industry}</div>
-                    <div style={{ fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 800, fontSize: '0.92rem', color: '#0b1220', marginTop: 1 }}>{c.company}</div>
+                    <div style={{ fontFamily: 'Inter,sans-serif', fontWeight: 800, fontSize: '0.92rem', color: '#0b1220', marginTop: 1 }}>{c.company}</div>
                   </div>
                 </div>
 
                 <h3 style={{
                   fontSize: '1.14rem', fontWeight: 800, color: '#0b1220',
-                  fontFamily: 'Plus Jakarta Sans,sans-serif', lineHeight: 1.32,
+                  fontFamily: 'Inter,sans-serif', lineHeight: 1.32,
                   marginBottom: 12, letterSpacing: '-0.012em',
                 }}>{c.headline}</h3>
 
@@ -157,7 +157,7 @@ export default function CaseStudies() {
                       borderBottom: mi < c.metrics.length - 1 ? '1px dashed #e8e3dc' : 'none',
                     }}>
                       <div style={{ fontSize: '0.78rem', color: '#64748b', fontFamily: 'Inter,sans-serif' }}>{m.label}</div>
-                      <div style={{ fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 800, fontSize: '0.92rem', color: c.color }}>{m.value}</div>
+                      <div style={{ fontFamily: 'Inter,sans-serif', fontWeight: 800, fontSize: '0.92rem', color: c.color }}>{m.value}</div>
                     </div>
                   ))}
                 </div>

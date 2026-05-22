@@ -90,7 +90,7 @@ export default function TrustedBrands() {
 
           <h2
             style={{
-              fontFamily: 'Plus Jakarta Sans,sans-serif',
+              fontFamily: 'Inter,sans-serif',
               fontSize: 'clamp(1.5rem, 3vw, 2.1rem)',
               fontWeight: 800,
               color: '#0b1220',
@@ -178,7 +178,7 @@ export default function TrustedBrands() {
                   {/* Brand Name */}
                   <span
                     style={{
-                      fontFamily: 'Plus Jakarta Sans,sans-serif',
+                      fontFamily: 'Inter,sans-serif',
                       fontWeight: 700,
                       fontSize: '0.95rem',
                       color: '#0b1220',
@@ -239,7 +239,7 @@ export default function TrustedBrands() {
             >
               <div
                 style={{
-                  fontFamily: 'Plus Jakarta Sans,sans-serif',
+                  fontFamily: 'Inter,sans-serif',
                   fontSize: 'clamp(1.6rem, 2.4vw, 2.1rem)',
                   fontWeight: 800,
                   color: s.c,

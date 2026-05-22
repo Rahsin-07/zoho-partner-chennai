@@ -12,20 +12,20 @@ const reasons = [
   {
     icon: 'bi-arrow-through-heart',
     color: '#dc2626',
-    title: 'We Stay with You from Day One to Beyond Go-Live',
-    desc: 'Our core team takes care of you from the initial call to post-launch support. No third party transfers. No disappearing after delivery. We stay with you.',
+    title: 'We Stay with You from Day One to Beyond Go Live',
+    desc: 'Our core team takes care of you from the initial call to post launch support. No third party transfers. No disappearing after delivery. We stay with you.',
   },
   {
     icon: 'bi-geo-alt-fill',
     color: '#f59e0b',
     title: 'Built for the Way Chennai Businesses Actually Work',
-    desc: 'We handle local tax compliance, set up integrations like Razorpay, IndiaMART, and Tally, and offer same-timezone support. We understand how businesses across Chennai and Tamil Nadu actually run.',
+    desc: 'We handle local tax compliance, set up integrations like Razorpay, IndiaMART, and Tally, and offer same timezone support. We understand how businesses across Chennai and Tamil Nadu actually run.',
   },
 ]
 
 const bullets = [
   '15+ Zoho specialists on staff',
-  '15+ years of hands-on experience',
+  '15+ years of hands on experience',
   '50+ implementations across India',
   'Chennai · Bangalore · Mumbai · Hyderabad',
 ]
@@ -62,7 +62,7 @@ export default function WhyUs() {
             Searching for the Best Zoho Partner in Chennai? <span className="grad-blue-red">Here's Why Chennai Businesses Pick ZoFlowX</span>
           </h2>
           <p className="section-sub mx-auto" style={{ maxWidth: 820 }}>
-            ZoFlowX is a Zoho Certified Authorized Partner and a Zoho Full-Service Partner based in Tirunelveli, India with a dedicated team of 15+ Zoho experts. Over 15 years of hands-on experience and 50+ Zoho implementations across India — real expertise in every Zoho product.
+            ZoFlowX is a Zoho Certified Authorized Partner and a Zoho Full Service Partner based in Tirunelveli, India with a dedicated team of 15+ Zoho experts. Over 15 years of hands on experience and 50+ Zoho implementations across India — real expertise in every Zoho product.
           </p>
 
           {/* Inline bullets */}
@@ -135,7 +135,7 @@ export default function WhyUs() {
                   transition: 'opacity 0.4s',
                 }} />
                 <div className="w-num" aria-hidden style={{
-                  position: 'absolute', top: 20, right: 24, fontFamily: 'Plus Jakarta Sans,sans-serif',
+                  position: 'absolute', top: 20, right: 24, fontFamily: 'Inter,sans-serif',
                   fontSize: '3.2rem', fontWeight: 900, letterSpacing: -2,
                   color: '#cbd5e1', opacity: 0.18, lineHeight: 1, transition: 'all 0.4s',
                 }}>0{i + 1}</div>
@@ -153,7 +153,7 @@ export default function WhyUs() {
                 <h3 style={{
                   fontSize: '1.2rem', fontWeight: 800,
                   marginBottom: 12, color: '#0b1220',
-                  fontFamily: 'Plus Jakarta Sans,sans-serif', lineHeight: 1.28,
+                  fontFamily: 'Inter,sans-serif', lineHeight: 1.28,
                   letterSpacing: '-0.014em', position: 'relative', zIndex: 1,
                 }}>{r.title}</h3>
 
@@ -184,7 +184,7 @@ export default function WhyUs() {
                   fontFamily: 'Inter,sans-serif',
                 }}>Serving across Chennai</div>
                 <div style={{
-                  fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 800,
+                  fontFamily: 'Inter,sans-serif', fontWeight: 800,
                   fontSize: '1.15rem', color: '#0b1220', lineHeight: 1.3,
                 }}>From OMR's IT corridor to Anna Nagar's enterprises — we cover every part of Chennai.</div>
               </div>

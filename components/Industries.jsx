@@ -100,7 +100,7 @@ export default function Industries() {
                   <i className={`bi ${ind.icon}`} aria-label={ind.alt} />
                 </div>
                 <div className="ind-name" style={{
-                  fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 700,
+                  fontFamily: 'Inter,sans-serif', fontWeight: 700,
                   fontSize: '0.92rem', color: '#0b1220',
                   transition: 'color 0.3s', position: 'relative', zIndex: 1, lineHeight: 1.3,
                 }}>{ind.name}</div>

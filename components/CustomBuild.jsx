@@ -61,7 +61,7 @@ export default function CustomBuild() {
                 Built Around Your Business
               </div>
               <h2 style={{
-                color: '#fff', fontFamily: 'Plus Jakarta Sans,sans-serif',
+                color: '#fff', fontFamily: 'Inter,sans-serif',
                 fontSize: 'clamp(1.7rem, 3.5vw, 2.6rem)', marginBottom: 10,
                 lineHeight: 1.2, letterSpacing: '-0.02em',
               }}>

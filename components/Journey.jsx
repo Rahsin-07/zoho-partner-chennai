@@ -26,7 +26,7 @@ const journeyCards = [
     points: [
       'Free audit of your current setup',
       'Identify gaps, fixes & quick wins',
-      'Re-architect what isn\'t working',
+      'Re architect what isn\'t working',
     ],
   },
 ]
@@ -133,7 +133,7 @@ export default function Journey() {
 
                 <h3 style={{
                   fontSize: '1.45rem', fontWeight: 800, marginBottom: 12,
-                  color: '#0b1220', fontFamily: 'Plus Jakarta Sans,sans-serif',
+                  color: '#0b1220', fontFamily: 'Inter,sans-serif',
                   lineHeight: 1.25, letterSpacing: '-0.014em', position: 'relative',
                 }}>{c.title}</h3>
 
@@ -159,7 +159,7 @@ export default function Journey() {
                   background: 'transparent', color: c.color,
                   border: `2px solid ${c.color}`,
                   borderRadius: 12, padding: '0.78rem 1.5rem',
-                  fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 700, fontSize: '0.88rem',
+                  fontFamily: 'Inter,sans-serif', fontWeight: 700, fontSize: '0.88rem',
                   textDecoration: 'none', transition: 'all 0.3s', position: 'relative',
                 }}>
                   {c.cta} <i className="bi bi-arrow-right" />

@@ -47,7 +47,7 @@ export default function Footer() {
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
               <LogoMark size={36} />
               <div style={{
-                fontFamily: 'Plus Jakarta Sans,sans-serif', fontSize: '1.6rem',
+                fontFamily: 'Inter,sans-serif', fontSize: '1.6rem',
                 fontWeight: 800, color: '#fff', letterSpacing: '-0.02em',
               }}>
                 ZoFlow
@@ -115,7 +115,7 @@ export default function Footer() {
 
           <div className="col-6 col-lg-2">
             <div style={{
-              fontFamily: 'Plus Jakarta Sans,sans-serif', fontSize: '0.78rem',
+              fontFamily: 'Inter,sans-serif', fontSize: '0.78rem',
               fontWeight: 800, letterSpacing: '1.8px', textTransform: 'uppercase',
               color: 'rgba(255,255,255,0.45)', marginBottom: 18,
             }}>Company</div>
@@ -130,7 +130,7 @@ export default function Footer() {
 
           <div className="col-6 col-lg-3">
             <div style={{
-              fontFamily: 'Plus Jakarta Sans,sans-serif', fontSize: '0.78rem',
+              fontFamily: 'Inter,sans-serif', fontSize: '0.78rem',
               fontWeight: 800, letterSpacing: '1.8px', textTransform: 'uppercase',
               color: 'rgba(255,255,255,0.45)', marginBottom: 18,
             }}>Services</div>
@@ -143,7 +143,7 @@ export default function Footer() {
             </ul>
 
             <div style={{
-              fontFamily: 'Plus Jakarta Sans,sans-serif', fontSize: '0.78rem',
+              fontFamily: 'Inter,sans-serif', fontSize: '0.78rem',
               fontWeight: 800, letterSpacing: '1.8px', textTransform: 'uppercase',
               color: 'rgba(255,255,255,0.45)', marginTop: 24, marginBottom: 14,
             }}>Zoho Partner In</div>
@@ -171,7 +171,7 @@ export default function Footer() {
 
           <div className="col-lg-3">
             <div style={{
-              fontFamily: 'Plus Jakarta Sans,sans-serif', fontSize: '0.78rem',
+              fontFamily: 'Inter,sans-serif', fontSize: '0.78rem',
               fontWeight: 800, letterSpacing: '1.8px', textTransform: 'uppercase',
               color: 'rgba(255,255,255,0.45)', marginBottom: 18,
             }}>Contact</div>
@@ -210,11 +210,15 @@ export default function Footer() {
                 color: 'rgba(255,255,255,0.45)', fontSize: '0.85rem', lineHeight: 1.65,
                 fontFamily: 'Inter,sans-serif', display: 'flex', gap: 8, marginTop: 6,
               }}>
-                <i className="bi bi-geo-alt" style={{ marginTop: 3 }} />
+                <i className="bi bi-geo-alt" style={{ marginTop: 3, flexShrink: 0 }} />
                 <span>
-                  Chennai · Tirunelveli — Tamil Nadu, India
+                  <strong style={{ color: 'rgba(255,255,255,0.7)', fontWeight: 700 }}>Chennai</strong>
                   <br />
-                  Serving clients across India & USA
+                  No.99, Greeta Tech Park, Rajiv Gandhi Salai, Industrial Estate, Perungudi, Chennai, Tamil Nadu 600096
+                  <br /><br />
+                  <strong style={{ color: 'rgba(255,255,255,0.7)', fontWeight: 700 }}>Tirunelveli</strong>
+                  <br />
+                  ZoFlowX - Zoho Authorized Partner, STC, Meena Plaza, 60 Feet Rd, Perumalpuram, Vasantha Nager, Tirunelveli, Tamil Nadu 627007
                 </span>
               </li>
             </ul>

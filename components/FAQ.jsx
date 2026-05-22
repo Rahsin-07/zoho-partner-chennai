@@ -8,19 +8,19 @@ const faqs = [
   { q: 'Which Zoho products does ZoFlowX implement?',
     a: "We implement Zoho CRM, Zoho Books, Zoho People, Zoho Projects, Zoho Desk, Zoho Analytics, Zoho Inventory, and Zoho One. If it's in the Zoho ecosystem, we can set it up and customise it for your business." },
   { q: 'Why choose a local Zoho partner in Chennai instead of a remote consultant?',
-    a: 'Working with a Chennai-based Zoho partner like ZoFlowX means faster response times, on-site support when needed, and a team that understands the regulatory and business context specific to Tamil Nadu and South India.' },
+    a: 'Working with a Chennai based Zoho partner like ZoFlowX means faster response times, on site support when needed, and a team that understands the regulatory and business context specific to Tamil Nadu and South India.' },
   { q: 'How long does a Zoho implementation typically take?',
     a: 'A standard Zoho CRM setup takes 2–4 weeks. More complex implementations involving multiple Zoho apps or data migration can take 6–12 weeks. ZoFlowX provides a clear project timeline before we begin.' },
   { q: 'Does ZoFlowX offer Zoho training for our team?',
-    a: "Yes. We provide hands-on Zoho training sessions tailored to your team's roles — whether that's sales staff using Zoho CRM or finance teams working in Zoho Books. Training is available in person (Chennai) or online." },
+    a: "Yes. We provide hands on Zoho training sessions tailored to your team's roles — whether that's sales staff using Zoho CRM or finance teams working in Zoho Books. Training is available in person (Chennai) or online." },
   { q: 'Can ZoFlowX migrate data from our existing software to Zoho?',
     a: 'Yes. We handle data migration from platforms like Tally, Salesforce, HubSpot, Excel, and other legacy systems into Zoho. We map, clean, and validate your data before migration to minimise errors.' },
   { q: 'What industries does ZoFlowX serve in Chennai?',
     a: "We work with businesses in manufacturing, retail, real estate, logistics, professional services, healthcare, and education. Our Zoho solutions are tailored to each industry's workflows and compliance needs." },
-  { q: 'Does ZoFlowX provide post-implementation support?',
+  { q: 'Does ZoFlowX provide post implementation support?',
     a: 'Yes. ZoFlowX offers ongoing Zoho support plans that cover troubleshooting, feature updates, user additions, and workflow changes. Support is available via phone, email, and remote desktop.' },
   { q: 'Can ZoFlowX build custom integrations with Zoho?',
-    a: "Yes. We build custom integrations between Zoho apps and third-party tools — including payment gateways, e-commerce platforms, ERP systems, and WhatsApp — using Zoho's API, Deluge scripting, and Zoho Flow." },
+    a: "Yes. We build custom integrations between Zoho apps and third party tools — including payment gateways, ecommerce platforms, ERP systems, and WhatsApp — using Zoho's API, Deluge scripting, and Zoho Flow." },
   { q: 'How do I get started with ZoFlowX?',
     a: "Book a free consultation through our website or call our Chennai office. We'll assess your current tools, understand your business goals, and recommend the right Zoho solution and implementation plan for you." },
   { q: 'Does ZoFlowX serve businesses across all areas of Chennai?',
@@ -28,9 +28,9 @@ const faqs = [
   { q: 'Is ZoFlowX suitable for small businesses in Chennai?',
     a: 'Absolutely. ZoFlowX works with businesses of all sizes — from solo traders and small teams to large enterprises. We offer flexible Zoho packages that fit SME budgets without compromising on quality of implementation or support.' },
   { q: "Can ZoFlowX help if we already have Zoho but it's not set up properly?",
-    a: 'Yes. Many clients come to us after a poor initial setup. ZoFlowX conducts a Zoho audit, identifies gaps in your current configuration, and re-implements or optimises workflows, automations, and integrations to get your system working the way it should.' },
+    a: 'Yes. Many clients come to us after a poor initial setup. ZoFlowX conducts a Zoho audit, identifies gaps in your current configuration, and re implements or optimises workflows, automations, and integrations to get your system working the way it should.' },
   { q: 'How do I get started with ZoFlowX as my Zoho Partner in Chennai?',
-    a: 'Getting started is simple. Book a free 30-minute Zoho audit with ZoFlowX. Our Chennai team will review your current setup, understand your business requirements, and give you a clear roadmap — with no obligation and no sales pressure.' },
+    a: 'Getting started is simple. Book a free 30 minute Zoho audit with ZoFlowX. Our Chennai team will review your current setup, understand your business requirements, and give you a clear roadmap — with no obligation and no sales pressure.' },
 ]
 
 const relatedPages = [
@@ -86,7 +86,7 @@ export default function FAQ() {
                         width: '100%', textAlign: 'left',
                         background: 'transparent', border: 'none',
                         padding: '22px 26px',
-                        fontFamily: 'Plus Jakarta Sans,sans-serif',
+                        fontFamily: 'Inter,sans-serif',
                         fontWeight: 700, fontSize: '0.98rem',
                         color: isOpen ? '#2563eb' : '#0b1220',
                         cursor: 'pointer',
@@ -99,7 +99,7 @@ export default function FAQ() {
                     >
                       <span style={{ display: 'flex', alignItems: 'center', gap: 14, flex: 1 }}>
                         <span style={{
-                          fontFamily: 'Plus Jakarta Sans,sans-serif',
+                          fontFamily: 'Inter,sans-serif',
                           fontSize: '0.78rem', fontWeight: 800,
                           color: isOpen ? '#2563eb' : '#94a3b8',
                           letterSpacing: 1, minWidth: 22,

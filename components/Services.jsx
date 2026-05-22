@@ -26,13 +26,13 @@ const services = [
   {
     tag: 'Develop', icon: 'bi-code-square',
     title: 'Zoho App Development',
-    desc: 'Some business processes need more than what standard Zoho tools offer. Our Zoho custom development experts create and develop fully custom business applications from scratch, tailored to your workflow, team structure, and long-term objectives.',
+    desc: 'Some business processes need more than what standard Zoho tools offer. Our Zoho custom development experts create and develop fully custom business applications from scratch, tailored to your workflow, team structure, and long term objectives.',
     cta: 'Build a Custom App',
   },
   {
     tag: 'Manage', icon: 'bi-life-preserver',
     title: 'Zoho Managed Services',
-    desc: 'Going live is just the beginning. Once implemented, ZoFlowX remains with your business — taking care of system health checks, updates, continuous improvements and day-to-day support, so Zoho never slows your business down.',
+    desc: 'Going live is just the beginning. Once implemented, ZoFlowX remains with your business — taking care of system health checks, updates, continuous improvements and day to day support, so Zoho never slows your business down.',
     cta: 'Get Managed Services',
   },
 ]
@@ -107,7 +107,7 @@ function ServiceCard({ s, color, delay }) {
 
         <h3 style={{
           fontSize: '1.18rem', fontWeight: 800, marginBottom: 12,
-          color: '#0b1220', fontFamily: 'Plus Jakarta Sans,sans-serif', lineHeight: 1.3,
+          color: '#0b1220', fontFamily: 'Inter,sans-serif', lineHeight: 1.3,
           letterSpacing: '-0.012em',
         }}>{s.title}</h3>
 
@@ -119,7 +119,7 @@ function ServiceCard({ s, color, delay }) {
         <a href="#contact" className="svc-cta" style={{
           display: 'inline-flex', alignItems: 'center', gap: 8,
           fontSize: '0.86rem', fontWeight: 700, color: '#0b1220',
-          textDecoration: 'none', fontFamily: 'Plus Jakarta Sans,sans-serif',
+          textDecoration: 'none', fontFamily: 'Inter,sans-serif',
           transition: 'all 0.28s',
         }}>
           {s.cta} <i className="bi bi-arrow-right" />
@@ -151,7 +151,7 @@ export default function Services() {
               Zoho Services Built for <span className="grad-blue-red">Chennai Businesses</span> and Beyond
             </h2>
             <p className="section-sub">
-              As a leading Zoho Partner in Chennai, our certified Zoho experts bring practical, ground-level experience across every Zoho product — helping businesses of all sizes get Zoho working the way it should, from day one and long after.
+              As a leading Zoho Partner in Chennai, our certified Zoho experts bring practical, ground level experience across every Zoho product — helping businesses of all sizes get Zoho working the way it should, from day one and long after.
             </p>
           </div>
           <div className="col-lg-4 text-lg-end mt-3 mt-lg-0 d-none d-lg-block">
@@ -189,7 +189,7 @@ export default function Services() {
                 textTransform: 'uppercase', color: '#f59e0b', marginBottom: 12,
               }}>One Partner. Every Zoho Service.</div>
               <h3 style={{
-                color: '#fff', fontFamily: 'Plus Jakarta Sans,sans-serif',
+                color: '#fff', fontFamily: 'Inter,sans-serif',
                 fontSize: 'clamp(1.4rem, 2.5vw, 2rem)', marginBottom: 8,
                 lineHeight: 1.2, letterSpacing: '-0.018em',
               }}>

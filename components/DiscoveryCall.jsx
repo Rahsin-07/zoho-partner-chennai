@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react'
 
 // Section 14 — Book a Discovery Call with Arul Raj
 const valueProps = [
-  { icon: 'bi-check-circle-fill', color: '#fcd34d', text: 'Book Your Free 30-Minute Session' },
+  { icon: 'bi-check-circle-fill', color: '#fcd34d', text: 'Book Your Free 30 Minute Session' },
   { icon: 'bi-check-circle-fill', color: '#fcd34d', text: 'One Conversation, Unlimited Possibilities' },
   { icon: 'bi-check-circle-fill', color: '#fcd34d', text: 'Lower Your Operating Costs by Up to 40%' },
   { icon: 'bi-check-circle-fill', color: '#fcd34d', text: '3X Team Performance in Just 90 Days' },
@@ -30,6 +30,7 @@ export default function DiscoveryCall() {
   return (
     <section id="discovery-call" ref={ref} style={{
       background: 'linear-gradient(135deg, #0b1220 0%, #1e3a8a 100%)',
+      padding: '90px 0',
       position: 'relative', overflow: 'hidden',
     }}>
       <div aria-hidden style={{
@@ -53,7 +54,7 @@ export default function DiscoveryCall() {
             </span>
 
             <h2 style={{
-              fontFamily: 'Plus Jakarta Sans,sans-serif',
+              fontFamily: 'Inter,sans-serif',
               fontSize: 'clamp(2rem, 4.2vw, 3.1rem)', fontWeight: 800,
               color: '#fff', marginBottom: 20, letterSpacing: '-0.022em', lineHeight: 1.1,
             }}>
@@ -69,7 +70,7 @@ export default function DiscoveryCall() {
               marginBottom: 28, lineHeight: 1.75, maxWidth: 540,
               fontFamily: 'Inter,sans-serif',
             }}>
-              <strong style={{ color: '#fff' }}>Marketing Automation & CRM Specialist</strong> · 14+ Years Experience · Ex-Oracle, Ex-Infosys. Personally handles every first call.
+              <strong style={{ color: '#fff' }}>Marketing Automation & CRM Specialist</strong> · 14+ Years Experience · Ex Oracle, Ex Infosys. Personally handles every first call.
             </p>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 32 }}>
@@ -114,9 +115,9 @@ export default function DiscoveryCall() {
           {/* RIGHT — Founder card */}
           <div className="col-lg-6 fade-up" style={{ transitionDelay: '0.15s' }}>
             <div style={{
-              background: '#f6f1ea', borderRadius: 28, padding: '42px 38px',
+              background: '#f6f1ea', borderRadius: 28, padding: 'clamp(24px, 4vw, 42px) clamp(20px, 3.5vw, 38px)',
               boxShadow: '0 40px 100px rgba(0,0,0,0.45)',
-              position: 'relative', overflow: 'hidden',
+              position: 'relative', overflow: 'hidden', maxWidth: '100%',
             }}>
               <div aria-hidden style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 6, background: 'var(--grad-tri)' }} />
               <div aria-hidden style={{ position: 'absolute', top: -60, right: -60, width: 220, height: 220, borderRadius: '50%', background: 'radial-gradient(circle, rgba(220,38,38,0.18), transparent 70%)', pointerEvents: 'none' }} />
@@ -127,7 +128,7 @@ export default function DiscoveryCall() {
                   width: 110, height: 110, borderRadius: '50%',
                   background: 'var(--grad-tri)',
                   display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                  color: '#fff', fontFamily: 'Plus Jakarta Sans,sans-serif',
+                  color: '#fff', fontFamily: 'Inter,sans-serif',
                   fontSize: '2.4rem', fontWeight: 800,
                   boxShadow: '0 18px 40px rgba(37,99,235,0.30)',
                   marginBottom: 16,
@@ -144,7 +145,7 @@ export default function DiscoveryCall() {
                     <i className="bi bi-patch-check-fill" style={{ color: '#2563eb', fontSize: '1.4rem' }} />
                   </div>
                 </div>
-                <h3 style={{ fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 800, fontSize: '1.4rem', color: '#0b1220', marginBottom: 4, letterSpacing: '-0.014em' }}>
+                <h3 style={{ fontFamily: 'Inter,sans-serif', fontWeight: 800, fontSize: '1.4rem', color: '#0b1220', marginBottom: 4, letterSpacing: '-0.014em' }}>
                   Arul Raj
                 </h3>
                 <div style={{ fontSize: '0.86rem', color: '#64748b', fontFamily: 'Inter,sans-serif', marginBottom: 10 }}>
@@ -168,7 +169,7 @@ export default function DiscoveryCall() {
                     borderRight: i < arr.length - 1 ? '1px solid #e8e3dc' : 'none',
                   }}>
                     <div style={{
-                      fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 800,
+                      fontFamily: 'Inter,sans-serif', fontWeight: 800,
                       fontSize: '1.5rem', color: '#0b1220', lineHeight: 1,
                     }}>{cr.v}</div>
                     <div style={{ fontSize: '0.72rem', color: '#64748b', fontFamily: 'Inter,sans-serif', marginTop: 6 }}>{cr.l}</div>

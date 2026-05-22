@@ -36,7 +36,7 @@ export default function Testimonials() {
     <section id="testimonials" ref={ref} style={{ background: '#fff', position: 'relative', overflow: 'hidden' }}>
       <div aria-hidden style={{
         position: 'absolute', top: 20, left: '50%', transform: 'translateX(-50%)',
-        fontSize: '20rem', fontFamily: 'Plus Jakarta Sans,sans-serif',
+        fontSize: '20rem', fontFamily: 'Inter,sans-serif',
         fontWeight: 900, color: 'rgba(11,18,32,0.025)', lineHeight: 1,
         pointerEvents: 'none', userSelect: 'none',
       }}>"</div>
@@ -50,7 +50,7 @@ export default function Testimonials() {
             Our Customers <span className="grad-red-yellow">Say It Best</span>
           </h2>
           <p className="section-sub mx-auto">
-            Real businesses. Honest feedback. See why companies across India keep coming back to ZoFlowX as their trusted Zoho Partner for every build, fix, and scale-up.
+            Real businesses. Honest feedback. See why companies across India keep coming back to ZoFlowX as their trusted Zoho Partner for every build, fix, and scale up.
           </p>
         </div>
 
@@ -115,13 +115,13 @@ export default function Testimonials() {
                     width: 46, height: 46, borderRadius: '50%',
                     background: t.color, color: '#fff',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 800,
+                    fontFamily: 'Inter,sans-serif', fontWeight: 800,
                     fontSize: '0.88rem', flexShrink: 0,
                     boxShadow: `0 6px 16px ${t.color}40`,
                     transition: 'transform 0.4s cubic-bezier(.2,.7,.2,1)',
                   }}>{t.initial}</div>
                   <div>
-                    <div style={{ fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 800, fontSize: '0.92rem', color: '#0b1220' }}>{t.name}</div>
+                    <div style={{ fontFamily: 'Inter,sans-serif', fontWeight: 800, fontSize: '0.92rem', color: '#0b1220' }}>{t.name}</div>
                     <div style={{ fontSize: '0.78rem', color: '#64748b', fontFamily: 'Inter,sans-serif', marginTop: 1 }}>{t.role}</div>
                   </div>
                 </div>

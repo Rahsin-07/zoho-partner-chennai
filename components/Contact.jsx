@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 
 // Section 16 — Let's build your Zoho solution
 const benefits = [
-  { icon: 'bi-lightning-charge-fill', color: '#fcd34d', title: 'Same-day reply',     desc: 'A senior consultant replies to every form, every day.' },
+  { icon: 'bi-lightning-charge-fill', color: '#fcd34d', title: 'Same day reply',     desc: 'A senior consultant replies to every form, every day.' },
   { icon: 'bi-shield-check',          color: '#93c5fd', title: 'Zero obligation',    desc: 'No credit card. No spam. Just a clear conversation.' },
   { icon: 'bi-person-badge',          color: '#fca5a5', title: 'No SDRs',            desc: 'You talk to someone who can actually fix things.' },
 ]
@@ -15,8 +15,10 @@ const channels = [
 ]
 
 // Google Maps embed URLs (no API key needed for basic embed)
-const chennaiMapSrc = "https://maps.google.com/maps?q=Chennai,Tamil%20Nadu,India&t=&z=11&ie=UTF8&iwloc=&output=embed"
-const tirunelveliMapSrc = "https://maps.google.com/maps?q=Tirunelveli,Tamil%20Nadu,India&t=&z=12&ie=UTF8&iwloc=&output=embed"
+const chennaiAddress = 'No.99, Greeta Tech Park, Rajiv Gandhi Salai, Industrial Estate, Perungudi, Chennai, Tamil Nadu 600096'
+const tirunelveliAddress = 'ZoFlowX - Zoho Authorized Partner, STC, Meena Plaza, 60 Feet Rd, Perumalpuram, Vasantha Nager, Tirunelveli, Tamil Nadu 627007'
+const chennaiMapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(chennaiAddress)}&t=&z=15&ie=UTF8&iwloc=&output=embed`
+const tirunelveliMapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(tirunelveliAddress)}&t=&z=15&ie=UTF8&iwloc=&output=embed`
 
 export default function Contact() {
   const ref = useRef(null)
@@ -48,7 +50,7 @@ export default function Contact() {
 
   return (
     <section id="contact" ref={ref} style={{
-      background: '#fff', position: 'relative', overflow: 'hidden',
+      background: '#fff', padding: '90px 0', position: 'relative', overflow: 'hidden',
     }}>
       <div aria-hidden style={{ position: 'absolute', top: '-10%', left: '-5%', width: 500, height: 500, background: 'radial-gradient(circle, rgba(37,99,235,0.08), transparent 65%)', filter: 'blur(40px)' }} />
       <div aria-hidden style={{ position: 'absolute', bottom: '-10%', right: '-5%', width: 460, height: 460, background: 'radial-gradient(circle, rgba(245,158,11,0.08), transparent 65%)', filter: 'blur(40px)' }} />
@@ -62,7 +64,7 @@ export default function Contact() {
             Let's build your <span className="grad-blue-red">Zoho solution</span>
           </h2>
           <p className="section-sub mx-auto">
-            Send us your requirements, and our team will respond shortly. We reply same-day — usually in under 4 hours during business hours.
+            Send us your requirements, and our team will respond shortly. We reply same day — usually in under 4 hours during business hours.
           </p>
         </div>
 
@@ -89,7 +91,7 @@ export default function Contact() {
                         background: isActive ? c : 'transparent',
                         color: isActive ? '#fff' : '#334155',
                         border: 'none', borderRadius: 10,
-                        fontFamily: 'Plus Jakarta Sans,sans-serif',
+                        fontFamily: 'Inter,sans-serif',
                         fontWeight: 700, fontSize: '0.86rem',
                         cursor: 'pointer', transition: 'all 0.28s var(--ease-out)',
                         display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 8,
@@ -120,13 +122,11 @@ export default function Contact() {
                 padding: '16px 20px', fontSize: '0.84rem',
                 color: '#64748b', fontFamily: 'Inter,sans-serif',
                 borderTop: '1px solid #f0ece6',
-                display: 'flex', alignItems: 'center', gap: 8,
+                display: 'flex', alignItems: 'flex-start', gap: 8,
               }}>
-                <i className="bi bi-pin-map-fill" style={{ color: '#dc2626' }} />
+                <i className="bi bi-pin-map-fill" style={{ color: '#dc2626', marginTop: 3, flexShrink: 0 }} />
                 <span>
-                  {activeMap === 'chennai'
-                    ? 'Serving across Chennai — Anna Nagar, T. Nagar, OMR, Velachery & beyond.'
-                    : 'HQ in Tirunelveli, Tamil Nadu — serving India & the USA.'}
+                  {activeMap === 'chennai' ? chennaiAddress : tirunelveliAddress}
                 </span>
               </div>
             </div>
@@ -161,7 +161,7 @@ export default function Contact() {
                     <i className={`bi ${b.icon}`} />
                   </div>
                   <div>
-                    <div style={{ fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 800, fontSize: '0.94rem', color: '#0b1220', marginBottom: 2 }}>{b.title}</div>
+                    <div style={{ fontFamily: 'Inter,sans-serif', fontWeight: 800, fontSize: '0.94rem', color: '#0b1220', marginBottom: 2 }}>{b.title}</div>
                     <div style={{ fontSize: '0.82rem', color: '#64748b', fontFamily: 'Inter,sans-serif', lineHeight: 1.5 }}>{b.desc}</div>
                   </div>
                 </div>
@@ -208,7 +208,7 @@ export default function Contact() {
                   </div>
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <div style={{ fontSize: '0.72rem', fontWeight: 700, color: '#94a3b8', letterSpacing: 1.2, textTransform: 'uppercase', fontFamily: 'Inter,sans-serif' }}>{c.label}</div>
-                    <div style={{ fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 700, fontSize: '0.92rem', color: '#0b1220' }}>{c.value}</div>
+                    <div style={{ fontFamily: 'Inter,sans-serif', fontWeight: 700, fontSize: '0.92rem', color: '#0b1220' }}>{c.value}</div>
                   </div>
                   <i className="bi bi-arrow-up-right" style={{ color: '#94a3b8', fontSize: '0.92rem' }} />
                 </a>
@@ -237,17 +237,17 @@ export default function Contact() {
                   }}>
                     <i className="bi bi-check-lg" />
                   </div>
-                  <h3 style={{ fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 800, fontSize: '1.4rem', color: '#0b1220', marginBottom: 8 }}>
+                  <h3 style={{ fontFamily: 'Inter,sans-serif', fontWeight: 800, fontSize: '1.4rem', color: '#0b1220', marginBottom: 8 }}>
                     Thanks — we've got it.
                   </h3>
                   <p style={{ fontSize: '0.94rem', color: '#64748b', fontFamily: 'Inter,sans-serif', maxWidth: 380, margin: '0 auto' }}>
-                    Your email client just opened with the message pre-filled. Once you hit send, our team will reply same day.
+                    Your email client just opened with the message pre filled. Once you hit send, our team will reply same day.
                   </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} style={{ position: 'relative' }}>
                   <h3 style={{
-                    fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 800,
+                    fontFamily: 'Inter,sans-serif', fontWeight: 800,
                     fontSize: '1.5rem', color: '#0b1220', marginBottom: 6,
                     letterSpacing: '-0.014em',
                   }}>

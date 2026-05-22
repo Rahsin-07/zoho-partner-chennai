@@ -4,9 +4,9 @@ import { useEffect, useRef } from 'react'
 // Section 10 — Hire a Zoho Developer in Chennai
 const benefits = [
   { icon: 'bi-eye-fill',     color: '#2563eb', title: 'Workflow First, Build Second',     desc: "Developers learn how your business actually runs before they write a single line of Deluge." },
-  { icon: 'bi-shield-check', color: '#dc2626', title: 'No Surprises Mid-Build',           desc: 'Clear scope, structured development, thorough testing — no rework after handover.' },
-  { icon: 'bi-stars',        color: '#f59e0b', title: 'Industry-Tested Talent',           desc: "Developers who've already solved problems like yours in retail, manufacturing and services." },
-  { icon: 'bi-clock-history', color: '#2563eb', title: 'On-Demand, Consistent',            desc: 'Dedicated to your business — not juggling 10 other clients. Same developer every week.' },
+  { icon: 'bi-shield-check', color: '#dc2626', title: 'No Surprises Mid Build',           desc: 'Clear scope, structured development, thorough testing — no rework after handover.' },
+  { icon: 'bi-stars',        color: '#f59e0b', title: 'Industry Tested Talent',           desc: "Developers who've already solved problems like yours in retail, manufacturing and services." },
+  { icon: 'bi-clock-history', color: '#2563eb', title: 'On Demand, Consistent',            desc: 'Dedicated to your business — not juggling 10 other clients. Same developer every week.' },
 ]
 
 const skillTags = [
@@ -28,7 +28,7 @@ export default function DeveloperHire() {
   }, [])
 
   return (
-    <section id="developer" ref={ref} style={{ background: '#fafaf7', position: 'relative', overflow: 'hidden' }}>
+    <section id="developer" ref={ref} style={{ background: '#fafaf7', padding: '90px 0', position: 'relative', overflow: 'hidden' }}>
       <div aria-hidden style={{ position: 'absolute', top: '-10%', right: '-10%', width: 500, height: 500, background: 'radial-gradient(circle, rgba(37,99,235,0.08), transparent 65%)', filter: 'blur(40px)' }} />
       <div aria-hidden style={{ position: 'absolute', bottom: '-10%', left: '-10%', width: 460, height: 460, background: 'radial-gradient(circle, rgba(245,158,11,0.08), transparent 65%)', filter: 'blur(40px)' }} />
 
@@ -75,7 +75,7 @@ export default function DeveloperHire() {
                       <i className={`bi ${b.icon}`} />
                     </div>
                     <div>
-                      <div style={{ fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 800, fontSize: '0.88rem', color: '#0b1220', marginBottom: 2 }}>{b.title}</div>
+                      <div style={{ fontFamily: 'Inter,sans-serif', fontWeight: 800, fontSize: '0.88rem', color: '#0b1220', marginBottom: 2 }}>{b.title}</div>
                       <div style={{ fontSize: '0.78rem', color: '#64748b', fontFamily: 'Inter,sans-serif', lineHeight: 1.5 }}>{b.desc}</div>
                     </div>
                   </div>
@@ -108,7 +108,7 @@ export default function DeveloperHire() {
                   <i className="bi bi-code-square" />
                 </div>
                 <div>
-                  <div style={{ fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 800, fontSize: '1.05rem', color: '#0b1220' }}>Dedicated Zoho Developer</div>
+                  <div style={{ fontFamily: 'Inter,sans-serif', fontWeight: 800, fontSize: '1.05rem', color: '#0b1220' }}>Dedicated Zoho Developer</div>
                   <div style={{ fontSize: '0.82rem', color: '#64748b', fontFamily: 'Inter,sans-serif', marginTop: 2, display: 'inline-flex', alignItems: 'center', gap: 6 }}>
                     <span style={{ width: 7, height: 7, borderRadius: '50%', background: '#10b981', display: 'inline-block', animation: 'pulse-soft 2s infinite' }} />
                     Available · From 1 week
@@ -158,7 +158,7 @@ export default function DeveloperHire() {
                     borderBottom: i < arr.length - 1 ? '1px dashed #e8e3dc' : 'none',
                   }}>
                     <span style={{ fontSize: '0.8rem', color: '#64748b', fontFamily: 'Inter,sans-serif' }}>{r.l}</span>
-                    <span style={{ fontFamily: 'Plus Jakarta Sans,sans-serif', fontWeight: 700, fontSize: '0.85rem', color: '#0b1220' }}>{r.v}</span>
+                    <span style={{ fontFamily: 'Inter,sans-serif', fontWeight: 700, fontSize: '0.85rem', color: '#0b1220' }}>{r.v}</span>
                   </div>
                 ))}
               </div>

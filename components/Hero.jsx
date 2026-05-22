@@ -14,7 +14,7 @@ const heroSlides = [
     description:
       'ZoFlowX helps Chennai businesses unlock the full potential of Zoho — structured implementation, custom solutions, migration and managed services.',
     descriptionBold: 'Every feature you pay for, working hard for your growth.',
-    primaryCta: { text: 'Book Free 30-Min Audit', icon: 'bi-arrow-right', href: '#contact' },
+    primaryCta: { text: 'Book Free 30 Min Audit', icon: 'bi-arrow-right', href: '#contact' },
     secondaryCta: { text: 'Explore Zoho Services', icon: 'bi-grid-3x3-gap', href: '#services' },
   },
   // ───────────── SLIDE 2 ─────────────
@@ -111,7 +111,7 @@ const moduleChips = [
   { label: 'Zoho Analytics', icon: 'bi-bar-chart-line', x: '1%',  y: '52%', delay: 0.8, color: '#f59e0b' },
 ]
 
-const SLIDE_DURATION = 7000 // 7s per slide
+const SLIDE_DURATION = 5000 // 5s per slide
 
 const mobileBtn = {
   width: 38, height: 38, borderRadius: '50%',
@@ -126,7 +126,10 @@ export default function Hero() {
   const [active, setActive] = useState(0)
   const [paused, setPaused] = useState(false)
 
-  // Auto-advance
+  // Auto-advance — single clean timer that restarts whenever the active
+  // slide changes or playback is paused. Pause is driven only by the
+  // navigation controls (not by hovering the whole hero), so the slider
+  // advances at a steady, predictable rhythm.
   useEffect(() => {
     if (paused) return
     const t = setTimeout(() => {
@@ -155,8 +158,6 @@ export default function Hero() {
     <section
       id="hero"
       ref={ref}
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
       style={{
         background: 'linear-gradient(160deg, #fafaf7 0%, #f0ece5 100%)',
         padding: '90px 0 70px',
@@ -212,7 +213,7 @@ export default function Hero() {
         {/* ═══════════════════ PERSISTENT H1 (all slides) ═══════════════════ */}
         <h1
           style={{
-            fontFamily: 'Plus Jakarta Sans,sans-serif',
+            fontFamily: 'Inter,sans-serif',
             fontSize: 'clamp(2.2rem, 5vw, 3.8rem)',
             fontWeight: 800,
             color: '#0b1220',
@@ -315,7 +316,7 @@ export default function Hero() {
 
                 {/* Headline — H2 */}
                 <h2 style={{
-                  fontFamily: 'Plus Jakarta Sans,sans-serif',
+                  fontFamily: 'Inter,sans-serif',
                   fontSize: 'clamp(1.1rem, 2vw, 1.5rem)',
                   fontWeight: 800,
                   color: '#0b1220',
@@ -343,7 +344,7 @@ export default function Hero() {
                       background: current.color, color: '#fff',
                       padding: '0.95rem 2rem', fontSize: '0.95rem', fontWeight: 700,
                       borderRadius: 14, textDecoration: 'none',
-                      fontFamily: 'Plus Jakarta Sans,sans-serif',
+                      fontFamily: 'Inter,sans-serif',
                       boxShadow: `0 14px 30px ${current.color}40`,
                       transition: 'transform 0.25s ease, box-shadow 0.25s ease',
                     }}
@@ -389,7 +390,7 @@ export default function Hero() {
                   ))}
                 </div>
                 <span style={{
-                  fontFamily: 'Plus Jakarta Sans,sans-serif',
+                  fontFamily: 'Inter,sans-serif',
                   fontSize: '1.05rem', fontWeight: 800, color: '#0b1220',
                 }}>4.8/5</span>
               </div>
@@ -486,7 +487,10 @@ export default function Hero() {
         </div>
 
         {/* ═══════════ PROGRESS BARS + COUNTER ═══════════ */}
-        <div style={{
+        <div
+          onMouseEnter={() => setPaused(true)}
+          onMouseLeave={() => setPaused(false)}
+          style={{
           marginTop: 32,
           display: 'flex', alignItems: 'center',
           gap: 18, flexWrap: 'wrap',
@@ -537,7 +541,7 @@ export default function Hero() {
 
           {/* Counter */}
           <div style={{
-            fontFamily: 'Plus Jakarta Sans,sans-serif',
+            fontFamily: 'Inter,sans-serif',
             fontSize: '0.95rem', color: '#64748b', fontWeight: 600,
             minWidth: 70, textAlign: 'right',
           }}>
